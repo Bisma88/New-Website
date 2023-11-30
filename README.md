@@ -1,4 +1,4 @@
 # New-Website
 
 
-click to visit website: https://bisma88.github.io/New-Website/about.html
+click to visit website: https://bisma88.github.io/New-Website/home.html
