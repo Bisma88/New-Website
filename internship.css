@@ -1,0 +1,291 @@
+body {
+    background-color: white;
+    scroll-behavior: smooth;
+  }
+  .navbar-custom {
+    background-color: white; /* Change the background color */
+    border-bottom: 2px solid white; /* Add a border at the bottom */
+  }
+  
+  .navbar-custom .navbar-brand {
+    color: white; /* Change the brand text color */
+  }
+  
+  .navbar-custom .navbar-brand img {
+    height: 50px; /* Adjust the logo height as needed */
+    width: auto; /* Ensure the logo width adjusts proportionally */
+    mix-blend-mode: darken;
+  }
+  
+  .navbar-custom .navbar-nav {
+    margin: 0 auto; /* Center the navigation links */
+    text-align: center; /* Align the text to center */
+  }
+  
+  .navbar-custom .navbar-nav .nav-item {
+    margin: 0 15px; /* Adjust the spacing between links */
+  }
+  
+  .navbar-custom .navbar-nav .nav-link {
+    color: black; /* Change the link text color */
+  }
+  
+  .navbar-custom .navbar-nav .nav-link:hover {
+    color: green; /* Change the link text color on hover */
+  }
+  
+  .navbar-custom .navbar-toggler-icon {
+    background-color: white; /* Change the color of the navbar toggle icon */
+  }
+  
+  .navbar-custom .navbar-toggler {
+    border-color: white; /* Change the border color of the navbar toggle button */
+  }
+  .btn-green {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-decoration: none; /* Remove underline from anchor element */
+    display: inline-block; /* Ensures padding is applied properly */
+}
+
+.btn-green:hover {
+    background-color: darkgreen; /* Change color on hover */
+    color: white; /* Maintain text color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+  
+
+  .hero-section {
+    position: relative;
+    height: 500px; /* Set the desired height */
+    background: url('images/close-up-young-business-team-working.jpg') center/cover no-repeat;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 100, 0, 0.5);; /* Adjust the overlay color and opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Text color on the overlay */
+  }
+
+  .hero-heading {
+    font-size: 62px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 70px;
+  }
+  @keyframes shadow-pulse {
+    0%, 100% {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.job-card {
+    max-width: 400px;
+    margin: 15px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add transition for smooth effect */
+    animation: shadow-pulse 2s infinite, zoom-in 2s infinite; /* Apply the keyframes animations */
+}
+
+.job-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1); /* Apply a slight zoom on hover */
+    animation: none; /* Disable the animations on hover */
+}
+
+.card-img {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.icon-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+hr {
+    border-top: 1px solid #ccc;
+}
+
+.custom-btn {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-btn:hover {
+    background-color: #0056b3;
+}
+
+  
+.section-image {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+.overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 100, 0, 0.5); /* Adjust the alpha value for the overlay transparency */
+  color: #fff; /* Text color on the overlay */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align text to the left */
+}
+
+/* Style the heading and text */
+.section-content {
+  padding: 40px;
+  text-align: left;
+}
+
+.section-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.section-content p {
+  font-size: 1.2em;
+  float: left;
+  width: 30%;
+}
+footer {
+  background-color: white; /* Footer background color */
+  color: black; /* Text color */
+  padding: 2px 0;
+}
+.container {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  margin-right: 15px; /* Adjust spacing between columns */
+}
+.footer-logo {
+  max-width: 200px; /* Adjust the maximum width of the logo */
+  margin-bottom: 10px;
+  margin-right: 1px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 5px;
+}
+
+.footer-links i {
+  margin-right: 5px;
+}
+
+.footer-links a {
+  color: black; /* Text color */
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff; /* Text color */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+.footer-bottom {
+  background-color: green; /* Footer bottom background color */
+  color: black; /* Text color */
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer-bottom a {
+  color: black;
+  margin: 0 10px;
+}
